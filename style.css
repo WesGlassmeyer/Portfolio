@@ -5,6 +5,11 @@
   font-size: 30px
 }
 
+.nav-container {
+  padding-top: 40px;
+  text-align: center;
+}
+
 a {
   text-decoration: none;
 }
@@ -21,33 +26,6 @@ a:hover {
 }
 a:active {
   color: rgba(46, 46, 102, 0.815)
-}
-
-.nav-container { 
-  padding-top: 40px;
-  text-align: right;
-  margin-right: 80px;
-}
-/*style the intro section*/
-.intro {
-  padding: 20px;
-  text-align: center;
-  font-size: 35px;
-  margin-left: 55px;
-  margin-right: 55px;
-}
-/*set the sizing of the pic*/
-.pics {
-  height: 600px;
-  width: 1350px;
-  padding: 40px;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-.article {
-  margin-left: 80px;
-  margin-right: 80px;
 }
 
 h2 {
@@ -77,20 +55,54 @@ h3 {
   padding: 10px;
 }
 
-/*apply background to the copyright section*/
-.background {
-  background-color: rgb(70, 6, 219);
-  opacity: .85;
-  margin-left: 600px;
-  margin-right: 600px;
+body {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border-style: solid;
+  border-width: 5px;?
 }
 
-/*apply font to the entire page*/
-.font-family {
-  font-family: Georgia,times new roman,Times,serif;
+img {
+  width: 100%;
 }
 
-.border {
-  border-style : solid;
-  border-width: 5px; 
+img.rounded {
+  border-radius: 12px;
 }
+
+main  .wrapper  h2 {
+  padding-left: 10px;
+  margin-bottom: 0;
+}
+
+/*style the intro section*/
+main .intro {
+  font-size: 35px;
+  padding: 20px;
+  text-align: center;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin: 40px;
+}
+
+.item-double {
+  flex: 2;
+  margin: 40px;
+}
+
+@media all and (min-width: 800px) {
+  .wrapper {
+    width: 80%;
+    margin: auto;
+  }
+
+  .group {
+    flex-direction: column;
+  }
