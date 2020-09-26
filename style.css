@@ -28,6 +28,7 @@ header h1 {
   font-size: 35px;
   color: white;
   text-align: center;
+  margin-top: 0;
   margin-bottom: 0px;
   background-color: rgb(58, 6, 179);
   justify-content: center;
@@ -102,7 +103,7 @@ main  .wrapper  h2 {
 
 /*style the intro section*/
 main .intro {
-  font-size: 35px;
+  font-size: 25px;
   padding: 20px;
   text-align: center;
 }
