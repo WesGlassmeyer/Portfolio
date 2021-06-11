@@ -99,6 +99,7 @@ main .wrapper h2 {
 main .intro {
   font-size: 20px;
   padding: 20px;
+  font-weight: 700;
 }
 
 .group {
