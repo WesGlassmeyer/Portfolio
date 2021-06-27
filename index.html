@@ -1,88 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Wes Glassmeyer</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Wes Glassmeyer" />
+    <meta name="title" property="og:title" content="Wes Glassmeyer" />
+    <meta property="og:type" content="Website" />
+    <meta name="image" property="og:image" content="_" />
+    <meta
+      name="description"
+      property="og:description"
+      content="Wes Glassmeyer"
+    />
+    <meta name="author" content="Wes Glassmeyer" />
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+      integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <script src="/script.js"></script>
+    <title>Wes Glassmeyer : Full Stack Web Developer</title>
   </head>
-  
   <body>
+    <main>
+      <div class="title-text">
+        <h1>
+          Wes Glassmeyer is a Full Stack Web Developer residing in Denver,
+          Colorado with a strong focus on creating adaptable and refined web
+          experiences.
+        </h1>
+      </div>
+      <div class="contact-icons">
+        <a href="https://www.linkedin.com/in/wes-glassmeyer/" target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="https://github.com/WesGlassmeyer" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a href="mailto:wes.glassmeyer@gmail.com"
+          ><i class="fas fa-envelope-square"></i
+        ></a>
+      </div>
 
-    <header>
-		<h1>Wes Glassmeyer</h1>
-		<nav>
-			<ul id="menu">
-				<li><a href="index.html">Home</a></li>
-        <li><a href="project-list.html">Projects</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-		</nav>
-	</header> 
-    
-    <!--create the intro section-->
-    <main> 
-      <div class="wrapper">
-
-        <article>
-				  <div class="group">
-					  <div class="item">
-              <p class="intro">Hello, my name is Wes. I am currently living in Denver, CO. I am an engineering student at Thinkful. I have a desire to continuously learn new skills.</p>
-              <img src="images/artificial-intelligence.jpg" alt="artificial-intelligence" class="rounded">
-					  </div>
-					</div>
-    
-          <!--create the about me section--> 
-          <div class="group">  
-            <div class="about-item">
-              <h2 class="about-title">About:</h2>
-                <p>For the last 15 years, I have been working as a metal fabricator. I have decided to take my passion for building things and transition to a career in the tech industry. 
-                Seeing my code produce results on a screen gives me the same feeling of accomplishment that I get from building projects with my hands. I am excited to join a team with great developers to contribute where I can and learn from them in the process. 
-                </p>
-                <p>Outside of work, I am an avid jiu-jitsu practitioner and coach. My time as a coach has shown me that I enjoy working with people and helping them succeed. I also enjoy spending time in the backcountry of Colorado, interacting with the environment.  
-                </p>
+      <div class="project-group">
+        <div class="item" onclick="toggle(`spar`)">
+          <img
+            class="thumbnail"
+            src="https://live.staticflickr.com/65535/51258164363_5059c9562e_o.png"
+            alt="BJJ Sparring Tracker screenshot"
+          />
+          <p class="project-desc">
+            Complete full stack build to help BJJ students track sparring
+            progress.
+          </p>
+          <button type="button" class="project-btn">View</button>
+        </div>
+        <div id="spar" style="display: none" class="transform">
+          <div class="expanded-project">
+            <div class="title-close">
+              <h2>BJJ Sparring Tracker</h2>
+              <button type="button" onclick="toggle(`spar`)" class="close-btn">
+                <i class="far fa-times-circle"></i>
+              </button>
             </div>
-          </div>   
-
-          <div class="img-group"> 
-            <div class="img-item">
-                  <img class="rounded" src="images/me-and-lance.jpg" alt="Rolling with Lance">
+            <img
+              src="images/tracker-demo.gif"
+              alt="BJJ Sparring Tracker screenshot"
+              class="project-demo"
+            />
+            <div class="project-btn-container">
+              <button type="button" class="project-btn">
+                <a
+                  class="project-link"
+                  href="https://bjj-sparring-tracker.vercel.app//"
+                  title="bjj sparring tracker"
+                  target="_blank"
+                  >Visit</a
+                >
+              </button>
+              <button type="button" class="project-btn">
+                <a
+                  class="project-link"
+                  href="https://github.com/WesGlassmeyer/bjj-sparring-tracker"
+                  title="bjj sparring tracker repo"
+                  target="_blank"
+                  >Github</a
+                >
+              </button>
             </div>
-            <div class="img-item">
-                  <img class="rounded" src="images/Crescent-Lake.jpg" alt="Fishing Crescent Lake">
-            </div>
-           
-          </div>           
-        </article>
-      
-
-          <div class="group">
-            <div class="item">    
-              <h3>Web development skills I hope to provide:</h3>
-                <ol>
-                  <li>Website Design</li>
-                  <li>e-Commerce Website</li>
-                  <li>Website Maintenance</li>
-                </ol>
-                  <hr>
-            </div>
+            <p class="project-desc-full">
+              In Brazilian Jiu-Jitsu we do a lot of sparring. You can use this
+              app to track your sparring sessions and use the statistics to help
+              guide your training. As a BJJ instructor, I wanted to create this
+              app to help BJJ students progress faster. The app utilizes React,
+              CSS, Jest, Vercel, and Javascript. The backend for this project
+              was built using Node, Express, and PostgreSQL.
+            </p>
           </div>
-        
-        <!--create the contact me section--> 
-             
-            <div class="center contact"> 
-              <a id="contact-me"></a>  
-              <h3>Are you interested in doing a project together?</h3>
-                <a class="contact-li" href="https://www.linkedin.com/in/wes-glassmeyer-3aa4a91b7/" target="_blank">LinkedIn</a>
-                <a class="contact-li" href="https://github.com/WesGlassmeyer/" target="_blank">GitHub</a>
-                <a class="contact-li" href="mailto:wes.glassmeyer@gmail.com">Email</a>
-            </div>
+        </div>
 
-      <footer class="center">
-        <h4>Copyright 2020</h4> 
-      </footer>
+        <div class="item" onclick="toggle(`symposium`)">
+          <img
+            class="thumbnail"
+            src="https://live.staticflickr.com/65535/51258178818_87318c08cd_s.jpg"
+            alt="BJJ Symposium screenshot"
+          />
+          <p class="project-desc">
+            Complete full stack build to help BJJ students find and rate
+            instructional videos.
+          </p>
+          <button type="button" class="project-btn">View</button>
+        </div>
+        <div id="symposium" style="display: none" class="transform">
+          <div class="expanded-project">
+            <div class="title-close">
+              <h2>BJJ Symposium</h2>
+              <button
+                type="button"
+                onclick="toggle(`symposium`)"
+                class="close-btn"
+              >
+                <i class="far fa-times-circle"></i>
+              </button>
+            </div>
+            <img
+              src="images/demo.gif"
+              alt="BJJ Symposium screenshot"
+              class="project-demo"
+            />
+            <div class="project-btn-container">
+              <button type="button" class="project-btn">
+                <a
+                  class="project-link"
+                  href="https://bjj-symposium.vercel.app/"
+                  title="bjj symposium"
+                  target="_blank"
+                  >Visit</a
+                >
+              </button>
+              <button type="button" class="project-btn">
+                <a
+                  class="project-link"
+                  href="https://github.com/WesGlassmeyer/bjj-symposium"
+                  title="bjj symposium repo"
+                  target="_blank"
+                  >Github</a
+                >
+              </button>
+            </div>
+            <p class="project-desc-full">
+              This app allows you to search for Brazilian Jiu-Jitsu videos from
+              YouTube. If you find a video you think is valuable, you can rate
+              it, apply tags and commit it to the Community Favorites Page. I
+              wanted to create this app as a sort of filter for the tremendous
+              amount of available BJJ instructional videos. Practitioners new to
+              the sport may not be able to tell the good from the bad, and I
+              hope this resource can help. The app utilizes React, Jest, Vercel,
+              HTML, CSS, Javascript, and makes calls to YouTube's API. We also
+              built the backend for this project using Node, Chai, Mocha,
+              Postgresql, and Knex.
+            </p>
+          </div>
+        </div>
+
+        <div class="item" onclick="toggle(`workout`)">
+          <img
+            class="thumbnail"
+            src="https://live.staticflickr.com/65535/51258438658_a8454620b8_s.jpg"
+            alt="Workout Generator screenshot"
+          />
+          <p class="project-desc">
+            Client side build making API calls to create workouts for users.
+          </p>
+          <button type="button" class="project-btn">View</button>
+        </div>
+        <div id="workout" style="display: none" class="transform">
+          <div class="expanded-project">
+            <div class="title-close">
+              <h2>Workout Generator</h2>
+              <button
+                type="button"
+                onclick="toggle(`workout`)"
+                class="close-btn"
+              >
+                <i class="far fa-times-circle"></i>
+              </button>
+            </div>
+            <img
+              src="images/Homepage.JPG"
+              alt="Workout Generator screenshot"
+              class="project-demo"
+            />
+            <div class="project-btn-container">
+              <button type="button" class="project-btn">
+                <a
+                  class="project-link"
+                  href="https://wesglassmeyer.github.io/workout-generator/index.html"
+                  title="workout generator"
+                  target="_blank"
+                  >Visit</a
+                >
+              </button>
+              <button type="button" class="project-btn">
+                <a
+                  class="project-link"
+                  href="https://github.com/WesGlassmeyer/workout-generator"
+                  title="workout generator repo"
+                  target="_blank"
+                  >Github</a
+                >
+              </button>
+            </div>
+            <p class="project-desc-full">
+              I created this app to help create a workout for the user. You can
+              either build your workout by selecting exercises or have the app
+              randomly select exercises for you. The app utilizes HTML, CSS,
+              Javascript, jQuery and makes calls to WGER's exercise API.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="about">
+        <h2 class="about-title">About:</h2>
+        <p>
+          For the last 15 years, I have been working as a metal fabricator. I
+          have decided to take my passion for building things and transition to
+          a career in the tech industry. Seeing my code produce results on a
+          screen gives me the same feeling of accomplishment that I get from
+          building projects with my hands. I am excited to join a team with
+          great developers to contribute where I can and learn from them in the
+          process.
+        </p>
+        <p>
+          Outside of work, I am an avid jiu-jitsu practitioner and coach. My
+          time as a coach has shown me that I enjoy working with people and
+          helping them succeed. I also enjoy spending time in the backcountry of
+          Colorado, interacting with the environment.
+        </p>
       </div>
     </main>
-      <script src="script.js"></script>
   </body>
 </html>
