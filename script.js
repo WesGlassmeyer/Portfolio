@@ -1,11 +1,13 @@
 function toggle(id) {
-  var x = document.getElementById(id);
-  if (x.style.display === "none") {
-    x.style.display = "flex";
-    x.style.flexDirection = "column";
-    x.style.justifyContent = "center";
-    x.style.alignItems = "center";
+  var main = document.getElementById("main");
+  var project = document.getElementById(id);
+  if (project.className === "slider close") {
+    project.className = "slider";
+    main.style.filter = "blur(20px)";
+    main.style.backgroundColor = "rgba(0, 0, 0, 0.9)";
   } else {
-    x.style.display = "none";
+    project.className = "slider close";
+    main.style.filter = "blur(0px)";
+    main.style.backgroundColor = "#181818";
   }
 }

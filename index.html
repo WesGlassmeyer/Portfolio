@@ -48,7 +48,7 @@
     <title>Wes Glassmeyer : Full Stack Web Developer</title>
   </head>
   <body>
-    <main>
+    <main id="main">
       <div class="title-text">
         <h1>
           <span class="name">Wes Glassmeyer</span>
@@ -88,50 +88,6 @@
           </p>
           <button type="button" class="project-view-btn">View</button>
         </div>
-        <div id="spar" style="display: none" class="transform">
-          <div class="expanded-project">
-            <div class="title-close">
-              <h2>BJJ Sparring Tracker</h2>
-              <button
-                type="button"
-                onclick="toggle(`spar`)"
-                class="close-btn"
-                aria-label="close button"
-              >
-                <i class="far fa-times-circle"></i>
-              </button>
-            </div>
-            <img
-              src="images/tracker-demo.gif"
-              alt="BJJ Sparring Tracker screenshot"
-              class="project-demo"
-            />
-            <div class="project-btn-container">
-              <a
-                class="project-btn project-link"
-                href="https://bjj-sparring-tracker.vercel.app//"
-                title="bjj sparring tracker"
-                target="_blank"
-                >Visit</a
-              >
-              <a
-                class="project-btn project-link"
-                href="https://github.com/WesGlassmeyer/bjj-sparring-tracker"
-                title="bjj sparring tracker repo"
-                target="_blank"
-                >Github</a
-              >
-            </div>
-            <p class="project-desc-full">
-              In Brazilian Jiu-Jitsu we do a lot of sparring. You can use this
-              app to track your sparring sessions and use the statistics to help
-              guide your training. As a BJJ instructor, I wanted to create this
-              app to help BJJ students progress faster. The app utilizes React,
-              CSS, Jest, Vercel, and Javascript. The backend for this project
-              was built using Node, Express, and PostgreSQL.
-            </p>
-          </div>
-        </div>
 
         <div class="item" onclick="toggle(`symposium`)">
           <img
@@ -145,54 +101,6 @@
           </p>
           <button type="button" class="project-view-btn">View</button>
         </div>
-        <div id="symposium" style="display: none" class="transform">
-          <div class="expanded-project">
-            <div class="title-close">
-              <h2>BJJ Symposium</h2>
-              <button
-                type="button"
-                onclick="toggle(`symposium`)"
-                class="close-btn"
-                aria-label="close button"
-              >
-                <i class="far fa-times-circle"></i>
-              </button>
-            </div>
-            <img
-              src="images/demo.gif"
-              alt="BJJ Symposium screenshot"
-              class="project-demo"
-            />
-            <div class="project-btn-container">
-              <a
-                class="project-btn project-link"
-                href="https://bjj-symposium.vercel.app/"
-                title="bjj symposium"
-                target="_blank"
-                >Visit</a
-              >
-              <a
-                class="project-btn project-link"
-                href="https://github.com/WesGlassmeyer/bjj-symposium"
-                title="bjj symposium repo"
-                target="_blank"
-                >Github</a
-              >
-            </div>
-            <p class="project-desc-full">
-              This app allows you to search for Brazilian Jiu-Jitsu videos from
-              YouTube. If you find a video you think is valuable, you can rate
-              it, apply tags and commit it to the Community Favorites Page. I
-              wanted to create this app as a sort of filter for the tremendous
-              amount of available BJJ instructional videos. Practitioners new to
-              the sport may not be able to tell the good from the bad, and I
-              hope this resource can help. The app utilizes React, Jest, Vercel,
-              HTML, CSS, Javascript, and makes calls to YouTube's API. We also
-              built the backend for this project using Node, Chai, Mocha,
-              Postgresql, and Knex.
-            </p>
-          </div>
-        </div>
 
         <div class="item" onclick="toggle(`workout`)">
           <img
@@ -204,48 +112,6 @@
             Client side build making API calls to create workouts for users.
           </p>
           <button type="button" class="project-view-btn">View</button>
-        </div>
-        <div id="workout" style="display: none" class="transform">
-          <div class="expanded-project">
-            <div class="title-close">
-              <h2>Workout Generator</h2>
-              <button
-                type="button"
-                onclick="toggle(`workout`)"
-                class="close-btn"
-                aria-label="close button"
-              >
-                <i class="far fa-times-circle"></i>
-              </button>
-            </div>
-            <img
-              src="images/Homepage.JPG"
-              alt="Workout Generator screenshot"
-              class="project-demo"
-            />
-            <div class="project-btn-container">
-              <a
-                class="project-btn project-link"
-                href="https://wesglassmeyer.github.io/workout-generator/index.html"
-                title="workout generator"
-                target="_blank"
-                >Visit</a
-              >
-              <a
-                class="project-btn project-link"
-                href="https://github.com/WesGlassmeyer/workout-generator"
-                title="workout generator repo"
-                target="_blank"
-                >Github</a
-              >
-            </div>
-            <p class="project-desc-full">
-              I created this app to help create a workout for the user. You can
-              either build your workout by selecting exercises or have the app
-              randomly select exercises for you. The app utilizes HTML, CSS,
-              Javascript, jQuery and makes calls to WGER's exercise API.
-            </p>
-          </div>
         </div>
       </div>
 
@@ -268,5 +134,141 @@
         </p>
       </div>
     </main>
+    <section role="contentinfo">
+      <div id="spar" class="slider close">
+        <div class="expanded-project">
+          <div class="title-close">
+            <h2>BJJ Sparring Tracker</h2>
+            <button
+              type="button"
+              onclick="toggle(`spar`)"
+              class="close-btn"
+              aria-label="close button"
+            >
+              <i class="far fa-times-circle"></i>
+            </button>
+          </div>
+          <img
+            src="images/tracker-demo.gif"
+            alt="BJJ Sparring Tracker screenshot"
+            class="project-demo"
+          />
+          <div class="project-btn-container">
+            <a
+              class="project-btn project-link"
+              href="https://bjj-sparring-tracker.vercel.app//"
+              title="bjj sparring tracker"
+              target="_blank"
+              >Visit</a
+            >
+            <a
+              class="project-btn project-link"
+              href="https://github.com/WesGlassmeyer/bjj-sparring-tracker"
+              title="bjj sparring tracker repo"
+              target="_blank"
+              >Github</a
+            >
+          </div>
+          <p class="project-desc-full">
+            In Brazilian Jiu-Jitsu we do a lot of sparring. You can use this app
+            to track your sparring sessions and use the statistics to help guide
+            your training. As a BJJ instructor, I wanted to create this app to
+            help BJJ students progress faster. The app utilizes React, CSS,
+            Jest, Vercel, and Javascript. The backend for this project was built
+            using Node, Express, and PostgreSQL.
+          </p>
+        </div>
+      </div>
+      <div id="symposium" class="slider close">
+        <div class="expanded-project">
+          <div class="title-close">
+            <h2>BJJ Symposium</h2>
+            <button
+              type="button"
+              onclick="toggle(`symposium`)"
+              class="close-btn"
+              aria-label="close button"
+            >
+              <i class="far fa-times-circle"></i>
+            </button>
+          </div>
+          <img
+            src="images/demo.gif"
+            alt="BJJ Symposium screenshot"
+            class="project-demo"
+          />
+          <div class="project-btn-container">
+            <a
+              class="project-btn project-link"
+              href="https://bjj-symposium.vercel.app/"
+              title="bjj symposium"
+              target="_blank"
+              >Visit</a
+            >
+            <a
+              class="project-btn project-link"
+              href="https://github.com/WesGlassmeyer/bjj-symposium"
+              title="bjj symposium repo"
+              target="_blank"
+              >Github</a
+            >
+          </div>
+          <p class="project-desc-full">
+            This app allows you to search for Brazilian Jiu-Jitsu videos from
+            YouTube. If you find a video you think is valuable, you can rate it,
+            apply tags and commit it to the Community Favorites Page. I wanted
+            to create this app as a sort of filter for the tremendous amount of
+            available BJJ instructional videos. Practitioners new to the sport
+            may not be able to tell the good from the bad, and I hope this
+            resource can help. The app utilizes React, Jest, Vercel, HTML, CSS,
+            Javascript, and makes calls to YouTube's API. We also built the
+            backend for this project using Node, Chai, Mocha, Postgresql, and
+            Knex.
+          </p>
+        </div>
+      </div>
+      <div id="workout" class="slider close">
+        <div class="expanded-project">
+          <div class="title-close">
+            <h2>Workout Generator</h2>
+            <button
+              type="button"
+              onclick="toggle(`workout`)"
+              class="close-btn"
+              aria-label="close button"
+            >
+              <i class="far fa-times-circle"></i>
+            </button>
+          </div>
+          <img
+            src="images/Homepage.JPG"
+            alt="Workout Generator screenshot"
+            class="project-demo"
+          />
+          <div class="project-btn-container">
+            <a
+              class="project-btn project-link"
+              href="https://wesglassmeyer.github.io/workout-generator/index.html"
+              title="workout generator"
+              target="_blank"
+              >Visit</a
+            >
+            <a
+              class="project-btn project-link"
+              href="https://github.com/WesGlassmeyer/workout-generator"
+              title="workout generator repo"
+              target="_blank"
+              >Github</a
+            >
+          </div>
+          <p class="project-desc-full">
+            I created this app to help create a workout for the user. You can
+            either build your workout by selecting exercises or have the app
+            randomly select exercises for you. The app utilizes HTML, CSS,
+            Javascript, jQuery and makes calls to WGER's exercise API.
+          </p>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
